@@ -23,7 +23,7 @@ const style = {
 
 
 
-const CollectionItemModal = ({ item }) => {
+const CollectionItemModal = ({ item, addItem }) => {
   const { name, price, imageUrl, description, size, options } = item;
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -32,7 +32,10 @@ const CollectionItemModal = ({ item }) => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <div onClick={handleOpen}>
+        <h1>{name}</h1>
+        <img src={imageUrl} />
+      </div>
       <Modal
         open={open}
         onClose={handleClose}
@@ -40,12 +43,17 @@ const CollectionItemModal = ({ item }) => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
+          <img src={imageUrl} />
+          <h3>{name}</h3>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            {description}
           </Typography>
+          <Button
+            onClick={() => {
+              setOpen(false);
+              addItem(item);
+            }}
+          >Add To Cart</Button>
         </Box>
       </Modal>
     </div>

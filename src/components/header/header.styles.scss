@@ -7,9 +7,11 @@
   border-bottom: 1px solid black;
 
   .logo-container {
+    display: flex;
     height: 100%;
-    width: 500px;
-    padding: 10px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
     color:black;
   }
 

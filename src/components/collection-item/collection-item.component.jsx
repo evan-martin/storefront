@@ -11,6 +11,7 @@ const CollectionItem = ({ item }) => {
   return (
     
       <div className="collection-item">
+       
         
         <CollectionItemModal item = {item}/>
       </div>
