@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import axios from "axios";
 
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 
@@ -9,11 +10,18 @@ import {
   selectCartTotal
 } from '../../redux/cart/cart.selectors';
 
-
-
-
-
 import './checkout.styles.scss';
+
+const handleClick = ({total}) => {
+  try {
+    axios.post("http://localhost:4242/create-checkout-session").then((res) => {
+    console.log(res.data)  
+    window.location.href = res.data
+    });
+  } catch (err){
+    console.log(err)
+  }
+}
 
 const CheckoutPage = ({ cartItems, total }) => (
   <div className='checkout-page'>
@@ -38,9 +46,13 @@ const CheckoutPage = ({ cartItems, total }) => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
     <div className='total'>TOTAL: ${total}</div>
-      <div className='checkout-button'>     
-     
-      </div>
+    <div className='checkout-button'>
+
+        <button onClick={() => handleClick({total})}>
+          Checkout
+        </button>
+
+    </div>
   </div>
 
 );
