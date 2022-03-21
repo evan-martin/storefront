@@ -1,10 +1,30 @@
 .banner{
-  padding-top: 10px;
+  background-image: url("../../assets/city.jpg");
+  background-size: cover;
+  height: 30em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position-y: 50%;
+
+  .banner-title-background{
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .banner-title{
+    color: white;
+    font-size: 5em;
+  }
+
 }
 
-.image{
-  height: 400px;
-  width: 1200px;
-  border: 1px solid black;
-  
+@media only screen and (max-width: 600px) {
+  .banner{
+
+  .banner-title {
+    font-size: 3em;
+  }}
 }

@@ -8,22 +8,14 @@ import './header.styles.scss';
 
 const Header = () => (
   <div className='header'>
-    <Link className='logo-container' to='/'>
-      <h1 className='logo'> Storefront </h1>
+    <Link className='logo-container' to='/' style={{ textDecoration: "none" }}>
+      <h1 className='logo'>pants etc. </h1>
     </Link>
-    <div className='options'>
-      <Link className='option' to='/'>
-        HOME
-      </Link>
-      <Link className='option' to='/about'>
-        ABOUT
-      </Link>
-
-      <Link className='option' to='/checkout'>
+    <div className='menu' >
+      <Link className='menu-item' style={{ textDecoration: "none" }} to='/checkout'>
+        Cart
         <CartIcon />
       </Link>
-
-
     </div>
 
   </div>

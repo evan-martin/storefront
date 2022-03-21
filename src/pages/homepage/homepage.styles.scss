@@ -1,5 +1,67 @@
-.grid {
+.grid-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+
+  .grid-item {
+    padding: 1em;
+    display: flex;
+    align-self: center;
+
+    #woman-image,
+    #men-image,
+    #accessories-image,
+    #footware-image,
+    #sale-image {
+      background-size: cover;
+      width: 500px;
+      height: 750px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover {
+      #woman-image,
+      #men-image,
+      #accessories-image,
+      #footware-image,
+      #sale-image {
+        opacity: 70%;
+      }
+    }
+
+    #woman-image {
+      background-image: url("../../assets/womens.jpg");
+    }
+
+    #accessories-image {
+      background-image: url("../../assets/jewlery.jpg");
+    }
+
+    #footware-image {
+      background-image: url("../../assets/shoes.jpg");
+      height: 360px;
+    }
+
+    #sale-image {
+      background-image: url("../../assets/sale.jpg");
+      height: 360px;
+    }
+
+    #men-image {
+      background-image: url("../../assets/mens.jpg");
+    }
+
+    .grid-title-background {
+      background: rgba(0, 0, 0, 0.7);
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+    .grid-title {
+      color: white;
+    }
+  }
 }

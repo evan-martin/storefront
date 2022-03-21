@@ -1,15 +1,14 @@
 import React from 'react';
+import bannerImage from "../../assets/city.jpg"
 
 import './banner.styles.scss';
 
 const Banner = () => (
 
   <div className='banner'>
-  <img
-    className='image'
-    src='https://www.dcsr.org/wp-content/uploads/2018/08/DCSkyline.jpg'
-    alt='DC'
-  />
+    <div className='banner-title-background'>
+      <h1 className="banner-title">Life | Art</h1>
+    </div>
   </div>
 
 );
