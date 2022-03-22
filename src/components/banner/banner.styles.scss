@@ -17,15 +17,20 @@
   .banner-title{
     color: white;
     font-size: 4em;
-    white-space: nowrap;
   }
 
-}
+  @media only screen and (max-width: 600px) {
+    .banner-title {
+      font-size: 2.5em;
+    }
+  }
 
-@media only screen and (max-width: 600px) {
-  .banner{
+  @media only screen and (max-width: 400px) {
+    .banner-title {
+      font-size: 2em;
+    }
+  }
+  
+  
 
-  .banner-title {
-    font-size: 3em;
-  }}
 }

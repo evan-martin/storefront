@@ -17,4 +17,10 @@
         color: white;
         font-size: 4em;
     }
+
+    @media only screen and (max-width: 600px) {
+        .shop-title {
+          font-size: 2.5em;
+        }
+      }
 }

@@ -10,8 +10,8 @@ const HomePage = () => (
     <h2>Collections</h2>
     <Container maxWidth="lg">
       <div className="grid-container">
-        <div className="grid-item" >
-          <Link to="/women" style={{ textDecoration: "none" }}>
+        <div  >
+          <Link className="grid-item" to="/women" style={{ textDecoration: "none" }}>
             <div id="woman-image" >
               <div className="grid-title-background">
                 <h3 className="grid-title">Women</h3>

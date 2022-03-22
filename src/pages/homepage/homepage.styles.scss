@@ -32,6 +32,17 @@
       }
     }
 
+    @media only screen and (max-width: 600px) {
+
+      #woman-image,
+      #men-image,
+      #accessories-image,
+      #footware-image,
+      #sale-image {
+        width: 90vw;
+      }
+    }
+
     #woman-image {
       background-image: url("../../assets/womens.jpg");
     }
@@ -65,3 +76,5 @@
     }
   }
 }
+
+
