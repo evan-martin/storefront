@@ -14,7 +14,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  //width: 400,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -32,9 +32,11 @@ const CollectionItemModal = ({ item, addItem }) => {
 
   return (
     <div>
-      <div onClick={handleOpen}>
-        <h1>{name}</h1>
-        <img src={imageUrl} />
+      <div className="collection-item" onClick={handleOpen}>    
+        <img className="image" src={imageUrl} />
+        <div className="item-name">
+        <p>{name} | {price} </p>
+        </div>
       </div>
       <Modal
         open={open}
@@ -43,7 +45,7 @@ const CollectionItemModal = ({ item, addItem }) => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <img src={imageUrl} />
+          <img className="modal-image" src={imageUrl} />
           <h3>{name}</h3>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {description}

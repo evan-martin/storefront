@@ -1,23 +1,22 @@
 import React from "react";
-import CollectionItem from "../collection-item/collection-item.component";
+import CollectionItemModal from "../collection-item-modal/collection-item-modal.component";
 
 import './collection.styles.scss'
 
 const Collection = ({ collection }) => {
-  const { title, items } = collection;
-  
+  const { items } = collection;
+
 
   return (
-    <div className="collection-page">
-       <div className="items">
+
+      <div className="collection-page">
         {items.map((item) => (
           <div key={item.id}>
-            <CollectionItem item={item}/>
+            <CollectionItemModal item={item} />
           </div>
         ))}
       </div>
-              
-    </div>
+
   );
 };
 

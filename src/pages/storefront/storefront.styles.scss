@@ -1,12 +1,20 @@
-.our-story{
+.shop-banner {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/shop-banner2.jpg");
+    background-size: cover;
+    height: 30em;
 
-    .shop-image{
-        max-width: 500px;
+    .shop-title-background {
+        background: rgba(0, 0, 0, 0.5);
+        padding-left: 3em;
+        padding-right: 3em;
     }
 
-    .shop-info{
-        margin-left:1em;
+    .shop-title {
+        color: white;
+        font-size: 5em;
     }
 }

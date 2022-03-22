@@ -1,10 +1,10 @@
 const SHOP_DATA = {
-  shop1: {
+  women: {
     id: 1,
-    title: 'Shop 1',
+    title: 'Women',
     imageUrl: 'https://picsum.photos/500/500',
     bio: 'Vexillologist thundercats biodiesel williamsburg cronut you probably havent heard of them cloud bread. Salvia celiac enamel pin jean shorts vape. Aesthetic la croix hashtag narwhal yr ramps hot chicken marfa put a bird on it hell of vinyl normcore. Master cleanse austin photo booth craft beer disrupt yuccie, palo santo VHS etsy.',
-    routeName: 'shop1',
+    routeName: 'women',
     items: [
       {
         id: 1,
@@ -99,10 +99,10 @@ const SHOP_DATA = {
       }
     ]
   },
-shop2: {
+men: {
     id: 2,
-    title: 'Shop 2',
-    routeName: 'shop2',
+    title: 'Men',
+    routeName: 'men',
     items: [
       {
         id: 10,
@@ -162,10 +162,10 @@ shop2: {
       }
     ]
   },
-  shop3: {
+  accessories: {
     id: 3,
-    title: 'Shop 3',
-    routeName: 'shop3',
+    title: 'Accessories',
+    routeName: 'accessories',
     items: [
       {
         id: 18,
@@ -204,10 +204,10 @@ shop2: {
       }
     ]
   },
-  shop4: {
+  footware: {
     id: 4,
-    title: 'Shop 4',
-    routeName: 'shop4',
+    title: 'Footware',
+    routeName: 'footware',
     items: [
       {
         id: 23,
@@ -260,10 +260,10 @@ shop2: {
       }
     ]
   },
-shop5: {
+sale: {
     id: 5,
-    title: 'Shop 5',
-    routeName: 'shop5',
+    title: 'Sale',
+    routeName: 'sale',
     items: [
       {
         id: 30,
