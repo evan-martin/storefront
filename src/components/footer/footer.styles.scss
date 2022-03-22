@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 6em;
+    align-items: center;
+    margin-top: 1em;
+    border-top: 1px solid rgb(185, 185, 185);
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: black;
+        }
+
+        p {
+            padding-right: 0.5em;
+            padding-left: 1em;
+        }
+    }
+
+    p {
+        padding-right: 2em;
+        color: black;
+    }
+}
