@@ -1,15 +1,31 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { selectCartItems } from '../../redux/cart/cart.selectors'; 
+import { clearItemFromCart } from '../../redux/cart/cart.actions';
+import { createStructuredSelector } from 'reselect';
 
-const PaymentSuccess = () => {
+const PaymentSuccess = ({ cartItems, clearItem }) => {
 
-    return(
+    useEffect(() => {    
+        cartItems.map(cartItem => (
+            clearItem(cartItem)
+          ))   
+       }, []);
+
+    return (
         <div className='payment-success-page'>
-            <h1> Thank you for shopping local </h1>
+            <h1> Thank you for shopping </h1>
         </div>
     )
-
-
-
 }
 
-export default PaymentSuccess
+const mapStateToProps = createStructuredSelector({
+    cartItems: selectCartItems,
+})
+
+const mapDispatchToProps = dispatch => ({
+    clearItem: item => dispatch(clearItemFromCart(item)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PaymentSuccess)

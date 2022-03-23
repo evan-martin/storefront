@@ -37,7 +37,7 @@ const HomePage = () => (
             </div>
           </Link>
         </div>
-        <div classname="nested-grid">
+        <div className="nested-grid">
           <div className="grid-item" >
             <Link to="/footware" style={{ textDecoration: "none" }}>
               <div id="footware-image" >

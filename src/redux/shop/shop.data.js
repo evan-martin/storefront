@@ -12,20 +12,7 @@ const SHOP_DATA = {
         imageUrl: 'https://picsum.photos/500/501',
         description: 'Fanny pack man bun small batch, hella portland bicycle rights enamel pin fashion axe cloud bread seitan. Organic cred lumbersexual man bun mustache blue bottle pop-up seitan occupy literally yuccie.',
         price: 25,
-        options: [
-          {
-           id: 1,
-           option: 'Small', 
-          },
-          {
-            id: 2,
-            option: 'Medium',
-          },
-          {
-            id: 3, 
-            option: 'Large',
-          }
-        ]    
+        priceID:'price_1KSmVXKx1GFK0jKDqiNgtfXh'
       },
       {
         id: 2,
@@ -33,20 +20,7 @@ const SHOP_DATA = {
         imageUrl: 'https://picsum.photos/500/502',
         description: 'Fanny pack man bun small batch, hella portland bicycle rights enamel pin fashion axe cloud bread seitan. Organic cred lumbersexual man bun mustache blue bottle pop-up seitan occupy literally yuccie.',
         price: 18,
-        options: [
-          {
-            id:1,
-            option: 'Blue',
-          },
-          {
-            id:2,
-            option: 'Red',
-          },
-          {
-            id: 3,
-            option: 'Green',
-          }
-        ]
+        priceID:'price_1HMg4AKx1GFK0jKD5vBzB5bc'
       },
       {
         id: 3,
