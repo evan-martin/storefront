@@ -14,8 +14,21 @@
   }
 }
 
-.modal-image {
-  max-width: 100%;
-  min-width: 300px;
-  height: auto;
+.modal {
+
+  .modal-image {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+
+  .title-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  p{
+    max-width: 500px;
+  }
 }

@@ -7,12 +7,12 @@ import { createStructuredSelector } from 'reselect';
 
 const PaymentSuccess = ({ cartItems, clearItem }) => {
 
-    useEffect(() => {    
+    useEffect(() => {   
         cartItems.map(cartItem => (
             clearItem(cartItem)
           ))   
        }, []);
-
+       console.log('hit use effect') 
     return (
         <div className='payment-success-page'>
             <h1> Thank you for shopping </h1>

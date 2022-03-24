@@ -10,4 +10,4 @@ export const store = createStore(rootReducer, composeWithDevTools(applyMiddlewar
 
 export const persistor = persistStore(store);
 
-export default { store, persistStore };
+export default { store, persistor };

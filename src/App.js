@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/header/header.component';
 import AboutPage from './pages/about/about.component'
 import CheckoutPage from './pages/checkout/checkout.component'
@@ -8,11 +6,7 @@ import HomePage from './pages/homepage/homepage.component';
 import StoreFront from './pages/storefront/storefront.component'
 import PaymentSuccess from './pages/payment-success/payment-success.component';
 import Footer from './components/footer/footer';
-
-
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-
+import './App.css';
 
 function App() {
   return (
