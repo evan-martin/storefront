@@ -6,6 +6,8 @@ import CheckoutItem from '../../components/checkout-item/checkout-item.component
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors';
 import Button from '@mui/material/Button';
 import LockIcon from '@mui/icons-material/Lock';
+import Container from '@mui/material/Container';
+
 import './checkout.styles.scss';
 
 const handleClick = ({ cartItems }) => {
@@ -32,38 +34,27 @@ const handleClick = ({ cartItems }) => {
 const CheckoutPage = ({ cartItems, total }) => {
 
   return (
-    <div className='checkout-page'>
-      <div className='checkout-header'>
-        <div className='header-block'>
-          <span>Product</span>
+    <Container maxWidth="lg">
+      <div className='checkout-container'>
+        <div className='checkout-header'>
+          <h1>Shopping Cart</h1>
         </div>
-        <div className='header-block'>
-          <span>Description</span>
-        </div>
-        <div className='header-block'>
-          <span>Quantity</span>
-        </div>
-        <div className='header-block'>
-          <span>Price</span>
-        </div>
-        <div className='header-block'>
-          <span>Remove</span>
+        {cartItems.map(cartItem => (
+          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+        ))}
+        <div className="total">
+          <div><h2>TOTAL: ${total}</h2></div>
+          <div className='checkout-button'>
+            <Button
+              startIcon={<LockIcon />}
+              variant='contained'
+              onClick={() => handleClick({ cartItems })}>
+              Checkout
+            </Button>
+          </div>
         </div>
       </div>
-      {cartItems.map(cartItem => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-      ))}
-      <div className='total'>TOTAL: ${total}</div>
-      <div className='checkout-button'>
-        <Button
-          startIcon={<LockIcon />}
-          variant='contained'
-          onClick={() => handleClick({ cartItems })}>
-          Checkout
-        </Button>
-
-      </div>
-    </div>
+    </Container>
   )
 }
 
