@@ -7,7 +7,7 @@ const Banner = () => (
 
   <div className='banner'>
     <div className='banner-title-background'>
-      <h1 className="banner-title">Cliche | Words</h1>
+      <h1 className="banner-title">Fashion | Lifestyle</h1>
     </div>
   </div>
 
