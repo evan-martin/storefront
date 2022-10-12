@@ -18,8 +18,6 @@ const handleClick = ({ cartItems }) => {
   ))
 
   let payload = checkoutArray;
-  console.log(payload);
-
 
   try {
     axios.post("  https://m75drneyac.execute-api.us-west-1.amazonaws.com/storefrontStripePOST", { payload }, {
