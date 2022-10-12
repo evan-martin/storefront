@@ -18,12 +18,12 @@ const handleClick = ({ cartItems }) => {
   ))
 
   let payload = checkoutArray;
+  console.log(payload);
+
 
   try {
-    axios.post("https://pants-ect-api.herokuapp.com/create-checkout-session", {
-      payload
-    }).then((res) => {
-      console.log(res.data)
+    axios.post("  https://m75drneyac.execute-api.us-west-1.amazonaws.com/storefrontStripePOST", { payload }, {
+  }).then((res) => {
       window.location.href = res.data
     });
   } catch (err) {
