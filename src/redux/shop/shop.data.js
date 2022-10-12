@@ -26,7 +26,7 @@ const SHOP_DATA = {
         imageUrl: 'https://i.ibb.co/Rg30tFz/patterned-dress.jpg',
         description: 'Biodiesel hella everyday carry, brooklyn VHS venmo next level pinterest normcore raclette keytar. Asymmetrical gochujang subway tile tofu iPhone waistcoat scenester poutine selvage pinterest farm-to-table.',
         price: 50,
-        priceID:'price_1KgdjNKx1GFK0jKD5n7gCQ8C'
+        priceID:'price_1KgdtFKx1GFK0jKD9WrbM8j8'
       },
       {
         id: 4,
@@ -34,7 +34,7 @@ const SHOP_DATA = {
         imageUrl: 'https://i.ibb.co/gdtNgPd/striped-jumper.jpg',
         description: 'Adaptogen waistcoat snackwave XOXO, banjo whatever coloring book heirloom squid offal goth knausgaard. Cronut vegan skateboard before they sold out, forage helvetica art party raclette put a bird on it food truck knausgaard activated charcoal plaid.',
         price: 35,
-        priceID:''
+        priceID:'price_1KgdjNKx1GFK0jKD5n7gCQ8C'
       },
       {
         id: 5,
